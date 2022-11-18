@@ -5,8 +5,8 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-family: Roboto, sans-serif;
-  min-width: 800px;
 }
 
 .main {
@@ -24,11 +24,18 @@
 }
 
 .title h1 {
-  font-size: 2rem;
+  font-size: 2em;
   color: rgba(255, 255, 255, 0.856);
   border: 1px solid rgba(255, 255, 255, 0.534);
   padding: 15px;
   border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+  .title h1 {
+    font-size: 1.3em;
+    padding: 10px;
+  }
 }
 
 .main .topBar {
@@ -178,7 +185,7 @@
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   border-radius: 32px;
-  margin: 0 0 20px 0 ;
+  margin: 0 0 20px 0;
 }
 
 .progressBar progress::-webkit-progress-value {
